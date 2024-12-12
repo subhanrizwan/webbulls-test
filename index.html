@@ -10,6 +10,9 @@
   </head>
 
   <style>
+    body{
+      overflow-x: none;
+    }
      .fa-user,
      .fa-magnifying-glass,
      .fa-cart-shopping { 
@@ -37,10 +40,12 @@
       background-color: yellow;
     }
     .main-btn{
+      /* border-radius: 6px; */
       padding:0.8rem 1.5rem 0.8rem 1.5rem;
     }
     .shop-btn{
-      padding:0.9rem 1.5rem 0.9rem 1.5rem;
+      width: 200px;
+      padding:0.8rem 1.5rem 0.8rem 1.5rem;
     }
    .categories{
     background-color: #DCFCFF;
@@ -77,11 +82,12 @@
     margin-right: 10px;
   }
   .sec-price{
+
     color: #23856D;
   }
   .hero-section2{
-      background-color: #96E9FB;
-      width: 100%;
+    background-image: linear-gradient(#ABECD6, #97E9FA);
+    width: 100%;
   }
   .rotate2 h1{
       font-size: 4.5rem;
@@ -100,20 +106,539 @@
     .subscribe{
       background-color: #DCFCFF;
     }
+    .searchBar{
+      width:431.05px;
+      height: 65.33px
+      ;
+    }
+    .send-btn{
+        width:120.91px ;
+        height:50.31px
+;
+border-radius: 6px;
+    }
+    .footer-section{
+      width: 100%;
+      background-image: linear-gradient(#97E9F9, #57E8D0);
 
-    @media only screen and (max-width:768px){
-      .row{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-      }
+    }
+    /* footer */
+    .footer {
+  background: linear-gradient(to right, #93e9be, #68e0cf);
+  padding: 40px 0;
+  color: #000;
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.footer h5 {
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  text-align: start;
+
+  margin: 5px 0;
+}
+
+.nav-list a {
+  color: #000;
+  text-decoration: none;
+}
+.navbar-nav .nav-item {
+  margin-right: 3rem; /* Adjust the space as needed */
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0; /* Last item ko margin remove karne ke liye */
+}
+.navbar-brand{
+  padding-right: 10rem;
+}
+.nav-link i{
+  color: #257F6E;
+}
+
+.nav-list a:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+.last-col{
+  padding-left: 15rem;
+}
+.for-mobile-icons{
+  display: none!important;
+}
+
+
+/* images */
+.image-grid {
+  padding: 12px;
+}
+
+.image-row {
+  display: flex;  
+}
+
+.image-row .image {
+  margin: 2px;
+  height: 240px;  
+}
+
+.image { 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.image-01 {
+  background-image: url('./image/card-item.png'); 
+  flex: 1.1;  
+}
+.image-02 {
+  background-image: url('./image/card-item\ \(3\).png'); 
+  flex: 1;  
+}
+.image-03 {
+  background-image: url('./image/card-item\ \(1\).png');  
+  flex: 1.8;  
+  height: 550px!important;
+
+}
+
+.image-04 {
+  background-image: url('https://images.unsplash.com/photo-1568602048381-2285db7095c6?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60'); 
+  flex: 1;
+}
+
+.image-05 {
+  background-image: url('https://images.unsplash.com/photo-1580319204908-eff9d6f0bd68?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60');
+  flex: 1;
+}
+
+
+.image-06 {
+  background-image: url('./image//card-item1.png');  
+  flex: 1.5;
+  height: 550px !important; 
+  order: -1; 
+  position: relative; 
+  bottom: 310px;
+  z-index: 1; 
+}
+.image-07 {
+  background-image: url('./image//card-item\ \(5\).png'); 
+  flex: 1.8;
+}
+
+.image-08 {
+  background-image: url('./image//card-item\ \(6\).png');  
+  flex: 1;
+}
+
+.image-09 {
+  background-image: url('./image//card-item\ \(7\).png');  
+  flex: 1;
+}
+
+/* .image-10 {
+  background-image: url('https://images.unsplash.com/photo-1616724319135-2370dbb4424c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2Nnw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'); 
+  flex: 1;
+}
+
+.image-11 {
+  background-image: url('https://images.unsplash.com/photo-1616418672515-1c2b39e219d3?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5N3w2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'); 
+  flex: 1;
+}
+
+.image-12 {
+  background-image: url('https://images.unsplash.com/photo-1548164806-9709e698bfc8?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzOHw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'); 
+  flex: 1;
+} */
+.cart{
+      width: 20rem;
+    }
+@media only screen and (min-width: 1440px) {
+  .hero-section .container .row .col-6 {
+    width: 45%;
+  }
+  .rotate {
+    transform: rotate(-1deg);
+    margin-left: 2rem;
+}
+.hero-section2 .container .row .col-6:nth-child(2) {
+    transform: rotate(-1deg);
+    /* margin-left: 2rem; */
+}
+.rotate2{
+  padding-top: 4rem !important;
+}
+}
+@media only screen and (max-width:1360px){
+  body{
+    overflow-x: none;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 1.5rem;
+}
+.navbar-brand {
+    padding-right: 1rem;
+}
+.hero-section {
+        background-color: #96E9FB;
+        width: 90%;
+        margin: auto 4.8%;
+        border-radius: 5px;
+    }
+    .hero-section .container .row .col-6 {
+    flex: 0 0 auto;
+    width: 36%;
+}
+.heading h1 {
+    width: 90%;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.rotate{
+  padding-left: 1rem;
+}
+.categories .container .row {
+        position: relative;
+        right: 0rem;
+        padding-top: 3rem;
+    }
+.categories-section{
+  padding-bottom: 0rem !important;
+}
+.bestseller-section .container .row .col-xl-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .child2 {
+        display: flex
+;
+        justify-content: flex-end !important;
+    }
+    .shop-section .container .row {
+        margin-right: -1rem;
+    }
+      .last-col {
+    padding-left: 8rem;
+}
+.bottom p{
+  padding-right: 5rem;
+}
+.hero-section2 .container .row .justify-content-end {
+    justify-content: center!important;
+}
+}
+@media only screen and (max-width:1024px){
+  .blue, .green, .orange, .black {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+  .hero-section {
+        background-color: #96E9FB;
+        width: 91%!important;
+        margin: auto 4.8%;
+        border-radius: 5px;
+    }
+    .hero-section .container .row .col-6 {
+        flex: 0 0 auto;
+        width: 45%;
+    }
+  .navbar-nav .nav-item {
+        margin-right: 0.8rem;
+    }
+    .navbar-light .navbar-nav .nav-link {
+    font-size: 0.9rem;
+}
+.navbar-brand {
+        padding-right: 0rem;
+    }
+    .rotate h1{
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      width: 300px;    
+    }
+    .main-img {
+        vertical-align: middle;
+        height: 350;
+        width: 490px;
+        padding-top: 0px;
+        padding-left: 0rem;
+    }
+    .hero-section .container .row .pt-5 {
+        padding-top: 1rem !important;
+    }
+    .rotate p {
+    width: 305px;
+}
+.categories .container .row {
+        position: relative;
+        right: 0rem;
+    }
+    .cart{
+      width: 25rem!important;
+    }
+    .bestseller-section .container .row .col-xl-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .hero-section2 .container .row .col-6{
+    flex: 0 0 auto;
+    width: 50%;
+    justify-content: center!important;
+}
+.rotate2 h1{
+      font-size: 3.5rem;
+      font-weight: bolder;
+      width: 350px;
+    }
+    .rotate2 {
+        padding-top: 2rem !important;
+    }
+      .shop-section .container .row {
+        margin-right: -1rem;
+    }
+    .shop-btn {
+    width: 164px;
+    padding: 0.8rem 0.5rem 0.8rem 0.5rem;
+}
+.main-img1{
+  width: 600px;
+}
+.rotate {
+    transform: rotate(-1deg);
+    margin-left: 1.5rem;
+}
+}
+
+@media only screen and (max-width:768px){
+  .hero-section {
+        width: 90% !important;
+    }
+    .hero-section .container .row .col-6 {
+        width: 45%;
+    }
+    .rotate {
+        margin-left: 0rem;
+    }
+    .rotate h1 {
+        font-size: 2rem;
+        width: 180px;
+    }
+    .rotate p {
+        width: 280px;    font-size: 0.8rem !important;
+    }
+    .main-img {
+        width: 360px;
+    }
+    .main-btn {
+    /* border-radius: 6px; */
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
+.heading h1 {
+        width: 100%;
+    }
+    
       .category-col{
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
   }
-    }
+  .category-col{
+    gap: 20px!important;
+  }
+  .card-body .fs-4 {
+    font-size: calc(1rem + .3vw) !important;
+}
+.h5, h5 {
+    font-size: 1rem;
+}
 
+.blue, .green, .orange, .black {
+        width: 15px;
+        height: 15px;
+    }
+    .main-img1 {
+        width: 500px;
+    }
+    .rotate2 {
+        padding-top: 1rem !important;
+    }
+    .rotate2 h1 {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        width: 250px;
+    }
+    .rotate2 p {
+    width: 350px;
+    font-size: 1rem !important;
+}
+  .for-mobile-icons .nav-item{
+      display: flex;
+  }
+  .shop-section .container .row .col-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+  .shop-btn {
+    width: 116px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+        font-size: 0.6rem;
+}
+.card-text:last-child {
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+    .card-title{
+      font-size: 1.5rem;
+    }
+    .image-grid {
+    padding: 0px;
+}
+.image-row .image {
+        margin: 2px;
+        height: 124px;
+    }
+    .image-03 {
+    flex: 1.8;
+    height: 320px !important;
+}
+.image-06 {
+    background-image: url(./image//card-item1.png);
+    flex: 1.5;
+    height: 318px !important;
+    order: -1;
+    position: relative;
+    bottom: 195px;
+    z-index: 1;
+}
+.bg-footer{
+  padding: 1rem !important;
+}
+.categories-section{
+  padding:0rem!important;
+
+}
+#icons-web{
+  display: none;
+}
+.for-mobile-icons{
+  display: block!important;
+}
+.last-col {
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+.about-us{
+  text-align: start;
+  padding-top: 3rem;
+}
+#main-logo{
+  width: 62px;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .55);
+    border-color: rgba(0, 0, 0, .1);
+    width: 60px;
+}
+
+}
+
+@media only screen and (max-width:400px){
+  .bottom{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+  .image-row {
+    flex-direction: column;
+  }
+  
+  .image-row .image {
+    flex-basis: auto;
+  }
+  
+   .rotate h1{
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-align: center;
+      width: 300px;    
+    }
+    .main-btn{
+
+      padding:0.8rem 1.3rem 0.8rem 1.3rem;
+    }
+    .main-img{
+      vertical-align: middle;
+    height: 250;
+    width: 300px;
+    padding-top: 35px;
+}
+.card{
+margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
+.category-col {
+  justify-content: flex-start;  
+        align-items: center;
+    }
+    .hero-section2 .container .row {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-content: center;
+        /* padding-left: 100px; */
+    }
+    .rotate2 h1{
+      font-size: 3.2rem;
+      font-weight: bolder;
+      width: 350px;
+    }
+    
+    .main-img1{
+      vertical-align: middle;
+    height: 250;
+    width: 350px;
+    padding-top: 35px;
+}
+.hero-section2 .container .row .col-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.about-us{
+  padding-top: 1.5rem;
+  text-align: center;
+}
+}
   </style>
   <body>
     <header>
@@ -123,8 +648,17 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="./image/logo.png" alt="">
+            <img id="main-logo" src="./image/logo.png" alt="">
           </a>
+           <!-- mobile -->
+           <ul class="navbar-nav mb-0 mb-lg-0 d-flex for-mobile-icons" >
+           <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i> </a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
+          </li>
+        
+          </ul>
+          <!-- mobile-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -143,14 +677,16 @@
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa-regular fa-user"></i> Login/Register</a>
+                <a class="nav-link" style="  color: #257F6E;" href="#"><i class="fa-regular fa-user"></i> Login/Register</a>
               </li>
-              <li class="nav-item">
+              <!-- web -->
+              <li class="nav-item" id="icons-web" >
                 <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i> </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" id="icons-web" >
                 <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i> </a>
               </li>
+              <!-- web -->
             </ul>
            
           </div>
@@ -170,7 +706,7 @@
                 <button type="button" class="btn btn-secondary bg-black main-btn">Start Designing</button>
               </div>
               </div>
-              <div class="col-6">
+              <div class="col-6" id="second-child" >
                 <img src="./image/main-img.png" class="main-img" alt="">
               </div>
             </div>
@@ -181,47 +717,38 @@
 
                <!-- Categories Section start -->
                <section>
-                <div class="bg-main2 categories-section pb-5 mt-5">
+                <div class="bg-main2 categories-section pb-1 mt-5">
                   <div class="categories">
                     <div class="heading">
-                      <h1 class="font-weight-bold">Shop Our Top Categories</h1>
+                      <h1 class="fw-bolder fs-1">Shop Our Top Categories</h1>
                     </div>
                     <div class="container">
- <!-- Row 1 -->
- <div class="row mb-3 category-row">
-  <div class="col-12 col-md-3">
-    <img src="./image/card-item.png" alt="Hats" class="img-fluid">
-  </div>
-  <div class="col-12 col-md-6">
-    <img src="./image/card-item (1).png" alt="Women" class="img-fluid">
-  </div>
-  <div class="col-12 col-md-3">
-    <img src="./image/card-item (3).png" alt="Infant" class="img-fluid">
-  </div>
-</div>
-
-<!-- Row 2 -->
-<div class="row mb-3 category-row">
-  <div class="col-12 col-md-4">
-    <img src="./image/card-item1.png" alt="Men" class="img-fluid">
-  </div>
-  <div class="col-12 col-md-4">
-    <img src="./image/card-item (7).png" alt="Miami Special" class="img-fluid special">
-  </div>
-  <div class="col-12 col-md-4">
-    <img src="./image/card-item (4).png" alt="Toddlers" class="img-fluid">
-  </div>
-</div>
-
-<!-- Row 3 -->
-<div class="row category-row">
-  <div class="col-12 col-md-4">
-    <img src="./image/card-item (5).png" alt="Drinkware" class="img-fluid">
-  </div>
-  <div class="col-12 col-md-4">
-    <img src="./image/card-item (6).png" alt="Youth" class="img-fluid">
-  </div>
-</div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="image-grid">
+                            <div class="image-row">
+                              <div class="image image-01"></div>  
+                              <div class="image image-03"></div>  
+                              <div class="image image-02"></div>  
+                            </div> 
+                            <!-- <div class="image-row">
+                              <div class="image image-04"></div>  
+                              <div class="image image-05"></div>  
+                            </div>   -->
+                            <div class="image-row">
+                              <div class="image image-06"></div>  
+                              <div class="image image-07"></div>  
+                              <div class="image image-08"></div>  
+                              <div class="image image-09"></div>  
+                            </div>  
+                            <!-- <div class="image-row">
+                              <div class="image image-10"></div>  
+                              <div class="image image-11"></div>  
+                              <div class="image image-12"></div>  
+                            </div>  -->
+                          </div>  
+                        </div>
+                      </div>
 </div>
 
 </div>
@@ -236,16 +763,16 @@
                 <div class="bg-main3 bestseller-section mt-4 p-1 mb-5 pb-5">
                   <div class="container">
                     <div class="heading mb-5 pb-3">
-                      <h1>Proven bestsellers</h1>
+                      <h1 class="fw-bolder fs-1" >Proven bestsellers</h1>
                     </div>
-                    <div class="row">
-                      <div class="col-xl-12 d-flex justify-content-between category-col">
-                        <div class="card" style="width: 20rem;">
+                    <div class="row" >
+                      <div class="col-xl-12 d-flex justify-content-between category-col" style="gap: 50px;">
+                        <div class="card cart" >
                           <img class="card-img-top" src="./image/man1.png" alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title text-center pt-2 font-weight-bold fs-4">Unisex Jersey <br> Muscle Tank</h5>
                             <div class="d-flex justify-content-evenly pt-3">
-                              <p class="card-text price fs-5 pb-5"><h5 class="fw-bold" style="color: gray;" >$16.4 <br> 8</h5> <h5 class="sec-price fw-bold" >$16.4 <br> 8</h5> </p>
+                              <p class="card-text price fs-5 pb-5"><h5 class="first-price" >$16.4 <br> 8</h5> <h5 class="sec-price fw-bold" >$16.4 <br> 8</h5> </p>
                               <!-- <p class="card-text price fs-5">$16.4 <br> 8 </p> -->
                             </div>
                             <div class="circle d-flex justify-content-center">
@@ -257,7 +784,7 @@
                           
                           </div>
                         </div>
-                        <div class="card" style="width: 20rem;">
+                        <div class="card cart" >
                           <img class="card-img-top" src="./image/man2.png" alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title text-center pt-2 font-weight-bold fs-4">Unisex Jersey <br> Muscle Tank</h5>
@@ -274,7 +801,7 @@
                           
                           </div>
                         </div>
-                        <div class="card" style="width: 20rem;">
+                        <div class="card cart" >
                           <img class="card-img-top" src="./image/man3.png" alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title text-center pt-2 font-weight-bold fs-4">Unisex Jersey <br> Muscle Tank</h5>
@@ -291,7 +818,7 @@
                           
                           </div>
                         </div>
-                        <div class="card" style="width: 20rem;">
+                        <div class="card cart" >
                           <img class="card-img-top" src="./image/man4.png" alt="Card image cap">
                           <div class="card-body">
                             <h5 class="card-title text-center pt-2 font-weight-bold fs-4">Unisex Jersey <br> Muscle Tank</h5>
@@ -320,13 +847,13 @@
 
                <!--hero-section-2 start -->
                <section>
-                <div class="hero-section2 bg-main4">
+                <div class="hero-section2 ">
                   <div class="container">
-                    <div class="row p-0 mt-5 mb-5 d-flex">
+                    <div class="row p-0 mt-5 mb-5 d-flex hero2">
                       <div class="col-6 d-flex justify-content-end ">
-                        <img src="./image/drop-img.png" class="main-img" alt="">
+                        <img src="./image/drop-img.png" class="main-img1" alt="">
                       </div>
-                      <div class="col-6 pt-5 d-flex justify-content-center ">
+                      <div class="col-6 pt-5 d-flex justify-content-center child2">
                         <div class="rotate2 pt-5">
                           <h1 class="p-0 fw-bolder">Customizable</h1> <br> <h1 class="sec-heading" >Hoodies for</h1> <br><h1>Every  Style</h1>
                         <p class="fs-5 fw-bolder">your designs on comfy hoodies. Chose form vibrant colors for all seasons.</p>
@@ -380,25 +907,87 @@
                <!-- shop section end -->
 
                <!--subscribe me section start -->
-                <div class="subscribe bg-main6">
+                <div class="subscribe bg-main6 pt-5">
                   <div class="container">
                   <div class="row p-5 d-flex align-items-center">
                     <div class="col-12">
                       <div class="title-heading text-center">
                         <h1 class="fw-bolder fs-1 " >Subscribe to our emails
                         </h1>
-                        <p>Be the first to know about new collections and exclusive offers</p>
+                        <p class="pb-4">Be the first to know about new collections and exclusive offers</p>
+                        <div class="d-flex justify-content-center">
+                          <div class="input-group mb-3 searchBar position-relative">
+                            <input 
+                              type="text" 
+                              class="form-control pe-5" 
+                              placeholder="Recipient's username" 
+                              aria-label="Recipient's username" 
+                              aria-describedby="basic-addon2"
+                              style="z-index: 1;" 
+                            >
+                            <button 
+                              type="button" 
+                              class="btn btn-secondary bg-black main-btn position-absolute" 
+                              style="top: 50%; right: 10px; transform: translateY(-50%); z-index: 2;"
+                            >
+                              SEND
+                            </button>
+                          </div>
+                        </div>
+                        
                       </div>
                     </div>
                   </div>
                 </div>
                 </div>
                <!--subscribe me section end -->
-
-      
-      <section></section>
     </main>
-    <footer></footer>
+    <!-- footer start -->
+    
+    <footer>
+      <div class="footer-section bg-footer p-5">
+          <div class="container">
+            <div class="row align-items-center p-5">
+              <!-- Logo Section -->
+              <div class="col-md-4 text-center text-md-start">
+                <img src="./image/logo.png" alt="Custom Tees & Gifts Logo" class="footer-logo">
+                <div class="social-icons mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+        
+              <!-- About Us Section -->
+              <div class="col-md-4 ">
+                <h5 class="fw-bolder about-us" >ABOUT US</h5>
+                <p>
+                  Born from a passion for creativity and quality, we've made it our mission to help you transform your living spaces with personalized touches that reflect your unique style.
+                </p>
+              </div>
+        
+              <!-- Navigation Section -->
+              <div class="col-md-4 last-col">
+                <h5 class="fw-bolder">NAVIGATION</h5>
+                <ul class="nav-list ">
+                  <li><a href="#">Catalog</a></li>
+                  <li><a href="#">All Products</a></li>
+                  <li><a href="#">Best Selling</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+        
+      </div>
+    </footer>
+    <div class="bottom bg-black text-white text-center pt-3 pb-1">
+      <p>@ 2024, Custom Tees and Gift Powered by Shopify . Privacy policy .  Refund policy . Terms of service . Shipping policy . Contact information</p>
+    </div>
+    <!-- footer end -->
+
 
 <!-- script bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
